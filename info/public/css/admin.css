@@ -1,0 +1,175 @@
+.header-section {
+    margin: 3rem auto;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.sarch-section {
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.sarch-section-table {
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.sarch-section-table th {
+    width: 10rem;
+    height: 2.5rem;
+    vertical-align: middle;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.sarch-section-table tr td {
+    width: 12rem;
+    height: 2.5rem;
+    vertical-align: middle;
+}
+
+.center {
+    text-align: center;
+}
+
+.submit-button {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.submit-button-check {
+    background-color: black;
+    color: white;
+    padding: 1rem 3rem;
+}
+
+.submit-button-reset {
+    background-color: white;
+    text-decoration: underline;
+    color: black;
+    border: none;
+    padding: 1rem 3rem;
+}
+
+.result-section {
+    margin: 3rem auto;
+    width: 70%;
+}
+
+.result-section-table {
+    margin: auto;
+    width: 100%;
+}
+
+.result-section-table tr th {
+    border-bottom: 1px solid black;
+    text-align: left;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.result-section-table tr td {
+    text-align: left;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.dark {
+    color: white;
+    background-color: black;
+    padding: 0.5rem 1.5rem;
+}
+
+input {
+    border: 1px solid black;
+}
+
+/*--続きを読むのロジック--*/
+
+.text {
+    position: relative;
+    height: 2rem;
+}
+
+.text_overflow {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: #fff;
+}
+
+.text:hover .text_overflow {
+    overflow-wrap: anywhere;
+    opacity: 1;
+    visibility: visible;
+    /**/
+    /*position:static;*/
+    
+}
+
+.text:hover {
+    height: 8rem;
+}
+
+/*エラーメッセージ*/
+
+.err-msg-list {
+    text-align: left;
+    font-size: 0.7rem;
+    background-color: pink;
+    color: red;
+}
+
+/*-ラジオボタン見た目-*/
+input[type=radio] {
+    display: none;
+}
+.radio02 {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 40px;
+    position: relative;
+    width: auto;
+}
+.radio02::before {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 24px;
+    left: 6px;
+    margin-top: -8px;
+    position: absolute;
+    top: 40%;
+    width: 24px;
+}
+.radio02::after {
+    background: black;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 8px;
+    left: 14px;
+    margin-top: -3px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 8px;
+}
+input[type=radio]:checked + .radio02::before {
+    border-color: #666;
+}
+input[type=radio]:checked + .radio02::after {
+    opacity: 1;
+}
+
+body{
+    min-height: 101vh;
+}

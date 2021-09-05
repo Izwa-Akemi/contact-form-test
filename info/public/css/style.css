@@ -1,0 +1,194 @@
+.header-section{
+    margin:3rem auto;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.main-section{
+    width: 100%;
+    margin: auto;
+}
+.main-section-table{
+    margin: auto;
+}
+.table-space{
+    text-align: right;
+}
+table th{
+    width: 10rem;
+    height: 2.5rem;
+    vertical-align: middle;
+    font-weight: bold;
+    text-align: left;
+}
+table tr td{
+    width: 12rem;
+    height: 2.5rem;
+    vertical-align: middle;
+}
+input {
+    height: 1.8rem;
+}
+.input-size{
+    width: 22rem;
+}
+
+.input-size-middle{
+    width: 21rem;
+}
+
+.require-lavel{
+    color: red;
+}
+
+.lavel-color{
+    color: gray;
+}
+
+.submit-button{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.submit-button-check{
+    background-color: black;
+    color: white;
+    padding: 1rem 3rem;
+    height: 3.5rem;
+}
+.submit-button-reset{
+    background-color: white;
+    text-decoration: underline;
+    color: black;
+    border: none;
+    padding: 1rem 3rem;
+}
+
+.thanks-section {
+    margin:20rem auto;
+    text-align: center;
+}
+
+.top-button{
+    margin-top: 6rem;
+}
+.top-button a{
+   text-decoration: none;
+   color: white;
+   background-color: black;
+   padding: 1rem 3rem;
+}
+
+/*--エラーメッセージ--*/
+.err-msg{
+   margin:2rem auto;
+    background-color: pink;
+    color: red;
+    width: 15rem;
+}
+.err-msg-word{
+    text-align: center;
+    background-color: pink;
+    color: red;
+}
+.err-msg-list{
+    text-align: left;
+    font-size: 0.7rem;
+    background-color: pink;
+    color: red;
+}
+
+/*-----エラーメッセージ-------*/
+
+/*-----エラーメッセージ-------*/
+
+#err-firstname1{
+    display: none;
+}
+#err-firstname2{
+    display: none;
+}
+#err-lastname1{
+    display: none;
+}
+#err-lastname2{
+    display: none;
+}
+#err-gender{
+    display: none;
+}
+#err-email1{
+    display: none;
+}
+#err-email2{
+    display: none;
+}
+#err-postcode1{
+    display: none;
+}
+#err-postcode2{
+    display: none;
+}
+#err-postcode3{
+    display: none;
+}
+#err-address1{
+    display: none;
+}
+#err-address2{
+    display: none;
+}
+#err-building_name{
+    display: none;
+}
+#err-opinion1{
+    display: none;
+}
+#err-opinion2{
+    display: none;
+}
+
+
+/*-ラジオボタン見た目-*/
+input[type=radio] {
+    display: none;
+}
+.radio02 {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 40px;
+    position: relative;
+    width: auto;
+}
+.radio02::before {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 24px;
+    left: 5px;
+    margin-top: -8px;
+    position: absolute;
+    top: 35%;
+    width: 24px;
+}
+.radio02::after {
+    background: black;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 8px;
+    left: 14px;
+    margin-top: -3px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 8px;
+}
+input[type=radio]:checked + .radio02::before {
+    border-color: #666;
+}
+input[type=radio]:checked + .radio02::after {
+    opacity: 1;
+}
