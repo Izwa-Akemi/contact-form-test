@@ -33,7 +33,7 @@
                         </tr>
                         <tr>
                             <th>登録日</th>
-                            <td><input type="date" name="date1"><br><br> @error('date1')<span class="err-msg-list">{{$message}}</span>@enderror</td>
+                            <td><input type="date" name="date1"><span class="space">~</span><br><br> @error('date1')<span class="err-msg-list">{{$message}}</span>@enderror</td>
                             <td><input type="date" name="date2"><br><br>@error('date2')<span class="err-msg-list">{{$message}}</span>@enderror</td>
                         </tr>
                         <tr>
