@@ -25,12 +25,12 @@
         <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
             <div>
                 <p class="text-sm text-gray-700 leading-5">
-                <span class="font-medium">{{ $paginator->total() }}</span>
-                    件中
+                全<span class="font-medium">{{ $paginator->total() }}</span>
+                    件中&emsp;
                     <span class="font-medium">{{ $paginator->firstItem() }}</span>
-                    件～
+                     件～
                     <span class="font-medium">{{ $paginator->lastItem() }}</span>
-                    件　を表示
+                    件　
                 </p>
             </div>
 
